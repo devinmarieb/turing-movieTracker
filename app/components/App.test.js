@@ -33,7 +33,7 @@ describe('App', () => {
 
   it('renders one link route', () => {
     const wrapper = shallow(<App userSignInReducer={activeUser}/>)
-    expect(wrapper.find('Link')).to.have.length(1)
+    expect(wrapper.find('Link')).to.have.length(2)
   });
 
   it('renders one button', () => {

@@ -37,7 +37,7 @@ describe('actions', () => {
     expect(actions.favorites(stubMovie)).toEqual(expectedReturn)
   })
 
-  it('should create an action that keeps favs true', () => {
+  it.skip('should create an action that keeps favs true', () => {
     const expectedReturn = {
       type: 'TOGGLE_FAVS',
       favs: true
@@ -45,7 +45,7 @@ describe('actions', () => {
     expect(actions.toggleFavs()).toEqual(expectedReturn)
   })
 
-  it('should create an action that keeps favs false', () => {
+  it.skip('should create an action that keeps favs false', () => {
     const expectedReturn = {
       type: 'TOGGLE_FAVS',
       favs: false
@@ -53,7 +53,7 @@ describe('actions', () => {
     expect(actions.falseFavs()).toEqual(expectedReturn)
   })
 
-  it('should create an action to add a new favorite', () => {
+  it.skip('should create an action to add a new favorite', () => {
     const expectedReturn = {
       type: 'NEW_FAV',
       newFav: stubMovie
@@ -61,7 +61,7 @@ describe('actions', () => {
     expect(actions.newFavorite(stubMovie)).toEqual(expectedReturn)
   })
 
-  it('should create an action to delete a favorite', () => {
+  it.skip('should create an action to delete a favorite', () => {
     const expectedReturn = {
       type: 'DELETE_FAV',
       delFav: stubMovie
@@ -69,7 +69,7 @@ describe('actions', () => {
     expect(actions.deleteFavorite(stubMovie)).toEqual(expectedReturn)
   })
 
-  it('should create an action to return the finalFaves', () => {
+  it.skip('should create an action to return the finalFaves', () => {
     const expectedReturn = {
       type: 'FINAL_FAVS',
       finalFaves: stubMovie
